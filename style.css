@@ -1,0 +1,554 @@
+/* === CSS لنواة طبيب === */
+/* فلسفة: أناقة طبية هادئة مع عمق بصري */
+
+:root {
+    /* لوحة الألوان المتدرجة */
+    --deep-blue: #0A2342;      /* الحكمة والثبات */
+    --vital-teal: #2A9D8F;     /* الصحة والاتزان */
+    --warm-gold: #E9C46A;      /* الدفء الإنساني */
+    --bg-ivory: #F8F9FA;       /* الخلفية العاجية */
+    --text-dark: #2D3748;      /* النص الداكن */
+    --gray-light: #E8E8E8;     /* الخطوط الفاصلة */
+    
+    /* الخطوط */
+    --font-heading-ar: 'Amiri', serif;
+    --font-heading-en: 'Playfair Display', serif;
+    --font-body-ar: 'Tajawal', sans-serif;
+    --font-body-en: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body-ar), var(--font-body-en);
+    color: var(--text-dark);
+    background-color: var(--bg-ivory);
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+/* === التخطيط العام === */
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* === الهيدر والشعار === */
+.site-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-bottom: 1px solid var(--gray-light);
+    padding: 1rem 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    background: var(--vital-teal);
+    border-radius: 50%;
+    position: relative;
+}
+
+.logo-icon::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: var(--warm-gold);
+    border-radius: 50%;
+    top: 12px;
+    left: 12px;
+}
+
+.logo-text h1 {
+    font-family: var(--font-heading-ar);
+    font-size: 1.8rem;
+    color: var(--deep-blue);
+    font-weight: 700;
+}
+
+.logo-text .tagline {
+    font-size: 0.85rem;
+    color: var(--vital-teal);
+    font-style: italic;
+}
+
+/* === التنقل الرئيسي === */
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--vital-teal);
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--vital-teal);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* === القسم البطولي (Hero) === */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-top: 80px;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.hero-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+}
+
+.overlay-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, 
+        rgba(10, 35, 66, 0.7) 0%, 
+        rgba(42, 157, 143, 0.4) 100%);
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-name {
+    font-family: var(--font-heading-ar);
+    font-size: 3.5rem;
+    color: var(--deep-blue);
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.doctor-title {
+    color: var(--vital-teal);
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    display: block;
+}
+
+.hero-message {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+    color: var(--text-dark);
+    border-right: 4px solid var(--warm-gold);
+    padding-right: 2rem;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-primary {
+    background: var(--vital-teal);
+    color: white;
+    border: 2px solid var(--vital-teal);
+}
+
+.btn-primary:hover {
+    background: transparent;
+    color: var(--vital-teal);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(42, 157, 143, 0.2);
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--deep-blue);
+    border: 2px solid var(--deep-blue);
+}
+
+.btn-outline:hover {
+    background: var(--deep-blue);
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* === قسم المقالات المميزة === */
+.featured-articles {
+    padding: 6rem 0;
+    background: white;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-header h2 {
+    font-family: var(--font-heading-ar);
+    font-size: 2.5rem;
+    color: var(--deep-blue);
+    margin-bottom: 1rem;
+}
+
+.section-header .subtitle {
+    color: var(--vital-teal);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
+}
+
+.article-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid var(--gray-light);
+}
+
+.article-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.card-header {
+    height: 200px;
+    overflow: hidden;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.article-card:hover .card-image {
+    transform: scale(1.05);
+}
+
+.card-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: var(--warm-gold);
+    color: var(--deep-blue);
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.card-content {
+    padding: 2rem;
+}
+
+.article-category {
+    color: var(--vital-teal);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.article-title {
+    font-family: var(--font-heading-ar);
+    font-size: 1.5rem;
+    color: var(--deep-blue);
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.article-excerpt {
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    opacity: 0.8;
+}
+
+.read-more {
+    color: var(--vital-teal);
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: gap 0.3s ease;
+}
+
+.read-more:hover {
+    gap: 10px;
+}
+
+/* === اقتباس اليوم === */
+.daily-quote {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, 
+        rgba(10, 35, 66, 0.05) 0%, 
+        rgba(42, 157, 143, 0.05) 100%);
+    text-align: center;
+}
+
+.quote-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem;
+    position: relative;
+}
+
+.quote-icon {
+    font-size: 4rem;
+    color: var(--warm-gold);
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-family: var(--font-heading-en);
+}
+
+.quote-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    color: var(--deep-blue);
+    margin-bottom: 2rem;
+    font-style: italic;
+    position: relative;
+    z-index: 1;
+}
+
+.quote-source {
+    color: var(--vital-teal);
+    font-weight: 600;
+}
+
+/* === الفوتر === */
+.site-footer {
+    background: var(--deep-blue);
+    color: white;
+    padding: 4rem 0 2rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.footer-logo .logo-text h1 {
+    color: white;
+}
+
+.footer-description {
+    margin-top: 1rem;
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+.footer-links h3 {
+    color: var(--warm-gold);
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--vital-teal);
+    padding-right: 10px;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.newsletter-input {
+    flex: 1;
+    padding: 0.8rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    color: white;
+}
+
+.newsletter-input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    opacity: 0.6;
+    font-size: 0.9rem;
+}
+
+/* === أنماط للشعار المتحرك === */
+.cinematic-logo {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seed-to-doctor {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.seed {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: var(--warm-gold);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: growSeed 3s ease-in-out infinite alternate;
+}
+
+@keyframes growSeed {
+    0% {
+        width: 20px;
+        height: 20px;
+        opacity: 1;
+    }
+    100% {
+        width: 200px;
+        height: 200px;
+        opacity: 0;
+    }
+}
+
+/* === علامة مائية للثقة === */
+.watermark {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0.1;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.watermark-text {
+    font-family: var(--font-heading-ar);
+    font-size: 8rem;
+    color: var(--deep-blue);
+    white-space: nowrap;
+    transform: rotate(-30deg);
+}
+
+/* === تحسينات الوصول === */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
