@@ -4,168 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>نواة طبيب | د. أنس محمد الهبه</title>
-    
     <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=IBM+Plex+Sans+Arabic:wght@300;400;600&display=swap" rel="stylesheet">
-    
     <style>
-        :root {
-            --primary: #1A2E35;
-            --accent: #2D707E;
-            --gold: #B19470;
-            --bg: #F9F9F7;
-            --white: #ffffff;
-            --shadow: 0 10px 40px rgba(0,0,0,0.05);
-        }
-
+        :root { --primary: #1A2E35; --accent: #2D707E; --gold: #B19470; --bg: #F9F9F7; --white: #ffffff; }
         * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
         body { font-family: 'IBM Plex Sans Arabic', sans-serif; background: var(--bg); color: var(--primary); line-height: 1.7; }
-
-        /* Loader */
-        #loader {
-            position: fixed; top: 0; width: 100%; height: 100%; background: var(--primary);
-            display: flex; justify-content: center; align-items: center; z-index: 10000;
-            color: var(--gold); font-family: 'Amiri', serif; font-size: 2.5rem;
-            animation: fadeOut 1s forwards 1.5s;
-        }
-        @keyframes fadeOut { to { opacity: 0; visibility: hidden; } }
-
-        header {
-            position: fixed; top: 0; width: 100%; padding: 1.2rem 8%;
-            background: rgba(255,255,255,0.95); backdrop-filter: blur(10px);
-            display: flex; justify-content: space-between; align-items: center;
-            z-index: 1000; box-shadow: var(--shadow);
-        }
+        header { position: fixed; top: 0; width: 100%; padding: 1.2rem 8%; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); display: flex; justify-content: space-between; align-items: center; z-index: 1000; box-shadow: 0 2px 20px rgba(0,0,0,0.05); }
         .logo { font-family: 'Amiri', serif; font-size: 1.8rem; text-decoration: none; color: var(--primary); font-weight: bold; }
         nav a { text-decoration: none; color: var(--primary); margin-right: 1.5rem; font-weight: 500; transition: 0.3s; }
         nav a:hover { color: var(--gold); }
-
-        /* Hero */
-        .hero {
-            height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;
-            text-align: center; background: radial-gradient(circle, #fff 0%, #f0f2f2 100%); padding: 0 10%;
-        }
-        .hero h1 { font-family: 'Amiri', serif; font-size: 4rem; margin-bottom: 10px; color: var(--primary); }
-        .hero p { font-size: 1.2rem; max-width: 800px; color: #555; }
-
+        .hero { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: radial-gradient(circle, #fff 0%, #f0f2f2 100%); padding: 0 10%; }
+        .hero h1 { font-family: 'Amiri', serif; font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 10px; }
+        .btn { background: var(--primary); color: white; padding: 15px 40px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; transition: 0.3s; display: inline-block; text-decoration: none; margin-top: 20px; }
+        .btn:hover { background: var(--gold); }
         section { padding: 100px 10%; }
         .section-title { font-family: 'Amiri', serif; font-size: 2.5rem; margin-bottom: 3rem; position: relative; }
         .section-title::after { content: ''; position: absolute; bottom: -10px; right: 0; width: 50px; height: 3px; background: var(--gold); }
-
-        /* Experience Grid */
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-        .card { background: var(--white); padding: 40px; border-radius: 5px; box-shadow: var(--shadow); transition: 0.3s; border-bottom: 4px solid var(--accent); }
-        .card:hover { transform: translateY(-10px); }
-
-        /* Smart Form */
-        .form-container { background: var(--white); padding: 50px; border-radius: 10px; box-shadow: var(--shadow); max-width: 700px; margin: auto; }
-        input, select, textarea { width: 100%; padding: 15px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 5px; font-family: inherit; }
-        .btn { background: var(--primary); color: white; padding: 15px 40px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; transition: 0.3s; display: inline-block; text-decoration: none; }
-        .btn:hover { background: var(--gold); }
-
-        /* Vault Section (New) */
-        .vault { background: var(--primary); color: white; }
-        .vault-card { background: rgba(255,255,255,0.05); padding: 30px; border: 1px dashed var(--gold); }
-
+        .card { background: var(--white); padding: 40px; border-radius: 5px; box-shadow: 0 10px 40px rgba(0,0,0,0.05); border-bottom: 4px solid var(--accent); }
         footer { background: #111; color: #777; padding: 60px 10%; text-align: center; }
-        
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 2.5rem; }
-            header { flex-direction: column; padding: 1rem; }
-            nav { margin-top: 1rem; }
-        }
     </style>
 </head>
 <body>
-
-    <div id="loader">نواة طبيب</div>
-
     <header>
-        <a href="#" class="logo">نواة طبيب</a>
+        <a href="index.html" class="logo">نواة طبيب</a>
         <nav>
             <a href="#about">الجوهر</a>
-            <a href="#vault">الأرشيف</a>
+            <a href="archive.html">الأرشيف الرقمي</a>
             <a href="#blog">المحرر</a>
             <a href="#contact">الاستشارة</a>
         </nav>
     </header>
 
     <section class="hero">
-        <h1>أنس محمد الهبه</h1>
-        <p>طبيب أسنان في صنعاء، نؤمن بأن المعرفة هي النواة الأولى للشفاء. نجمع بين الإتقان الطبي والعمق الفكري.</p>
-        <div style="margin-top: 30px;">
-            <a href="#contact" class="btn">احجز استشارتك المبدئية</a>
-        </div>
+        <h1>د. أنس محمد الهبه</h1>
+        <p>طبيب أسنان في صنعاء | حيث يلتقي عمق الفكر بدقة الطب</p>
+        <a href="archive.html" class="btn">دخول الأرشيف وتحميل الكتب</a>
     </section>
 
     <section id="about">
         <h2 class="section-title">عن النواة..</h2>
-        <div style="display: flex; gap: 50px; flex-wrap: wrap; align-items: center;">
-            <div style="flex: 1; min-width: 300px;">
-                <p>أنا د. أنس، طبيب يرى في طب الأسنان مزيجاً من الهندسة الدقيقة والفن الخالص. في عيادتي وفي هذا الموقع، نسعى لتقديم تجربة طبية تتجاوز المألوف، حيث الشفافية التامة هي المعيار الأول.</p>
-                <p style="margin-top: 20px;">سواء كنت تبحث عن ابتسامة تجميلية أو علاج تخصصي، هنا تجد التفاصيل العلمية التي تحتاجها بصدق ونزاهة.</p>
-            </div>
-            <div style="flex: 1; min-width: 300px; background: #eee; height: 350px; border-radius: 10px; display: flex; align-items: center; justify-content: center; border: 5px solid white; box-shadow: var(--shadow);">
-                [ صورتك الشخصية هنا ]
-            </div>
-        </div>
+        <p>أنا د. أنس، أؤمن أن المعرفة هي أولى خطوات العلاج. في "نواة طبيب"، نسعى لتقديم محتوى طبي رصين يخدم المريض والباحث على حد سواء.</p>
     </section>
 
-    <section id="vault" class="vault">
-        <h2 class="section-title" style="color: var(--gold);">أرشيف النواة (Downloads)</h2>
-        <div class="grid">
-            <div class="vault-card">
-                <h3 style="color: var(--gold);">أوراق النواة #1</h3>
-                <p>ملخص فكري حول مستقبل طب الأسنان الرقمي في اليمن.</p>
-                <a href="#" style="color: white; font-size: 0.9rem; text-decoration: underline;">تحميل PDF</a>
-            </div>
-            <div class="vault-card">
-                <h3 style="color: var(--gold);">دليل المريض الواعي</h3>
-                <p>كيف تختار طبيب أسنانك؟ معايير النزاهة قبل التجميل.</p>
-                <a href="#" style="color: white; font-size: 0.9rem; text-decoration: underline;">تحميل الدليل</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="blog">
+    <section id="blog" style="background: #f0f2f2;">
         <h2 class="section-title">المحرر الفكري</h2>
         <div class="grid">
             <div class="card">
                 <h3>سيكولوجيا الألم</h3>
-                <p>لماذا يخاف الناس من الطبيب؟ وكيف نبني علاقة مبنية على الراحة النفسية.</p>
-                <a href="#" style="color: var(--accent); font-weight: bold; text-decoration: none;">اقرأ المقال</a>
+                <p>تحليل في العلاقة بين الخوف من طبيب الأسنان والوعي الصحي العام.</p>
             </div>
             <div class="card">
-                <h3>تجميل الأسنان.. فن أم تجارة؟</h3>
-                <p>تحليل نقدي للممارسات الحالية في عالم هوليود سمايل.</p>
-                <a href="#" style="color: var(--accent); font-weight: bold; text-decoration: none;">اقرأ المقال</a>
+                <h3>تجميل الأسنان</h3>
+                <p>بين الحاجة الطبية والهوس الجمالي؛ أين تكمن الحقيقة؟</p>
             </div>
         </div>
     </section>
 
     <section id="contact">
-        <h2 class="section-title">بوابة الاستشارة الذكية</h2>
-        <div class="form-container">
-            <p style="margin-bottom: 20px; text-align: center; color: #666;">قم بتعبئة النموذج وسأقوم بمراجعة حالتك والرد عليك فكرياً وطبياً.</p>
-            <form action="#">
-                <input type="text" placeholder="الاسم الكامل" required>
-                <input type="email" placeholder="البريد الإلكتروني" required>
-                <select>
-                    <option>سبب التواصل</option>
-                    <option>استشارة علاجية</option>
-                    <option>استشارة تجميلية</option>
-                    <option>تعاون علمي/أكاديمي</option>
-                </select>
-                <textarea placeholder="وصف موجز للحالة أو الفكرة.." rows="5"></textarea>
-                <button type="submit" class="btn" style="width: 100%;">إرسال للنواة</button>
-            </form>
-        </div>
+        <h2 class="section-title">تواصل مباشر</h2>
+        <p>صنعاء - الجمهورية اليمنية | info@anas-alhaba.com</p>
     </section>
 
     <footer>
-        <div style="font-family: 'Amiri', serif; font-size: 2rem; color: var(--gold); margin-bottom: 20px;">نواة طبيب</div>
-        <p>© 2025 د. أنس محمد الهبه | صنعاء - اليمن</p>
-        <div style="font-size: 0.8rem; margin-top: 20px; color: #444;">موقع آمن ومشفر عبر GitHub Pages</div>
+        <p>© 2025 د. أنس محمد الهبه | جميع الحقوق محفوظة</p>
     </footer>
-
 </body>
 </html>
