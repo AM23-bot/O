@@ -3,852 +3,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>نواة طبيب | د. أنس محمد الهبه - طبيب أسنان من صنعاء</title>
-    <meta name="description" content="موقع د. أنس الهبه الشخصي: حيث يلتقي العلم بالفكر الواعي. مدونة طبية فكرية عميقة، مقالات توعوية، وسيرة ذاتية احترافية.">
+    <title>نواة طبيب | د. أنس محمد الهبه - طبيب أسنان ومفكر صحي</title>
+    <meta name="description" content="مدونة فكرية طبية عميقة تجمع بين العلم والفكر في طب الأسنان. مقالات تحليلية، توعية صحية، وفلسفة طبية إنسانية.">
     
-    <!-- Structured Data for SEO -->
+    <!-- Open Graph -->
+    <meta property="og:title" content="نواة طبيب | من العمق.. نبدأ">
+    <meta property="og:description" content="حيث يلتقي العلم بالفكر الواعي في طب الأسنان">
+    <meta property="og:image" content="/assets/images/og-image.jpg">
+    <meta property="og:type" content="website">
+    
+    <!-- Structured Data -->
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "MedicalBusiness",
-      "name": "نواة طبيب - د. أنس محمد الهبه",
-      "medicalSpecialty": "Dentistry",
-      "description": "موقع طبي فكري لطبيب الأسنان د. أنس محمد الهبه من صنعاء، اليمن",
-      "founder": {
-        "@type": "Person",
-        "name": "أنس محمد الهبه",
-        "jobTitle": "طبيب أسنان",
-        "nationality": "يمني"
-      },
-      "url": "https://nawaattabib.com",
-      "sameAs": [],
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "اليمن",
-        "addressRegion": "صنعاء"
-      }
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "نواة طبيب - د. أنس الهبه",
+        "description": "موقع طبي فكري متخصص في طب الأسنان",
+        "medicalSpecialty": "Dentistry",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "YE",
+            "addressRegion": "صنعاء"
+        },
+        "founder": {
+            "@type": "Person",
+            "name": "أنس محمد الهبه",
+            "jobTitle": "طبيب أسنان"
+        }
     }
     </script>
     
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Almarai:wght@300;400;700&family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- الخطوط -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     
-    <!-- CSS Styles -->
-    <style>
-        /* Reset & Base Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        :root {
-            --deep-blue: #0A2342;
-            --vital-teal: #2A9D8F;
-            --warm-gold: #E9C46A;
-            --background: #F8F9FA;
-            --text-dark: #2D3748;
-            --light-gray: #E8E8E8;
-        }
-        
-        body {
-            font-family: 'Almarai', 'Tajawal', sans-serif;
-            background-color: var(--background);
-            color: var(--text-dark);
-            line-height: 1.8;
-            overflow-x: hidden;
-        }
-        
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Cairo', sans-serif;
-            font-weight: 700;
-            color: var(--deep-blue);
-            margin-bottom: 1rem;
-        }
-        
-        .english-font {
-            font-family: 'Inter', sans-serif;
-        }
-        
-        a {
-            text-decoration: none;
-            color: var(--vital-teal);
-            transition: all 0.3s ease;
-        }
-        
-        a:hover {
-            color: var(--deep-blue);
-        }
-        
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        .btn {
-            display: inline-block;
-            background-color: var(--vital-teal);
-            color: white;
-            padding: 12px 28px;
-            border-radius: 4px;
-            font-weight: 600;
-            border: none;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-family: 'Cairo', sans-serif;
-        }
-        
-        .btn:hover {
-            background-color: var(--deep-blue);
-            color: white;
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-        }
-        
-        .btn-outline {
-            background-color: transparent;
-            border: 2px solid var(--vital-teal);
-            color: var(--vital-teal);
-        }
-        
-        .btn-outline:hover {
-            background-color: var(--vital-teal);
-            color: white;
-        }
-        
-        section {
-            padding: 80px 0;
-        }
-        
-        .section-header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-        
-        .section-header h2 {
-            font-size: 2.5rem;
-            position: relative;
-            display: inline-block;
-        }
-        
-        .section-header h2::after {
-            content: '';
-            position: absolute;
-            width: 70px;
-            height: 4px;
-            background-color: var(--warm-gold);
-            bottom: -15px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        
-        /* Header & Navigation */
-        header {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background-color: rgba(255, 255, 255, 0.95);
-            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
-            z-index: 1000;
-            padding: 15px 0;
-        }
-        
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        
-        .logo-text h1 {
-            font-size: 1.8rem;
-            margin-bottom: 0;
-        }
-        
-        .logo-text p {
-            font-size: 0.9rem;
-            color: var(--vital-teal);
-        }
-        
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 30px;
-        }
-        
-        nav a {
-            font-weight: 600;
-            font-size: 1.05rem;
-            position: relative;
-        }
-        
-        nav a::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            background-color: var(--vital-teal);
-            bottom: -5px;
-            right: 0;
-            transition: width 0.3s ease;
-        }
-        
-        nav a:hover::after {
-            width: 100%;
-        }
-        
-        .mobile-menu-btn {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            color: var(--deep-blue);
-            cursor: pointer;
-        }
-        
-        /* Hero Section */
-        .hero {
-            padding-top: 180px;
-            padding-bottom: 100px;
-            background: linear-gradient(135deg, rgba(10, 35, 66, 0.05) 0%, rgba(42, 157, 143, 0.05) 100%);
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .hero::before {
-            content: '';
-            position: absolute;
-            width: 300px;
-            height: 300px;
-            background-color: rgba(233, 196, 106, 0.1);
-            border-radius: 50%;
-            top: -100px;
-            right: -100px;
-        }
-        
-        .hero::after {
-            content: '';
-            position: absolute;
-            width: 200px;
-            height: 200px;
-            background-color: rgba(42, 157, 143, 0.1);
-            border-radius: 50%;
-            bottom: -80px;
-            left: -80px;
-        }
-        
-        .hero-content {
-            display: flex;
-            align-items: center;
-            gap: 50px;
-            position: relative;
-            z-index: 1;
-        }
-        
-        .hero-text {
-            flex: 1;
-        }
-        
-        .hero-image {
-            flex: 1;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-        }
-        
-        .hero-image img {
-            width: 100%;
-            height: auto;
-            display: block;
-            transition: transform 0.5s ease;
-        }
-        
-        .hero-image:hover img {
-            transform: scale(1.03);
-        }
-        
-        .hero h1 {
-            font-size: 3.2rem;
-            margin-bottom: 20px;
-            line-height: 1.2;
-        }
-        
-        .hero p {
-            font-size: 1.3rem;
-            color: var(--text-dark);
-            margin-bottom: 30px;
-            max-width: 600px;
-        }
-        
-        .hero-cta {
-            display: flex;
-            gap: 20px;
-            margin-top: 30px;
-        }
-        
-        /* Philosophy Section */
-        .philosophy {
-            background-color: white;
-        }
-        
-        .philosophy-content {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
-        
-        .philosophy-content h2 {
-            font-size: 2.2rem;
-            margin-bottom: 30px;
-        }
-        
-        .philosophy-content p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-            color: var(--text-dark);
-        }
-        
-        .quote {
-            font-size: 1.4rem;
-            font-style: italic;
-            color: var(--vital-teal);
-            border-right: 4px solid var(--warm-gold);
-            padding-right: 20px;
-            margin: 40px 0;
-            text-align: right;
-        }
-        
-        /* Blog Preview Section */
-        .blog-preview {
-            background-color: var(--background);
-        }
-        
-        .articles-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 30px;
-        }
-        
-        .article-card {
-            background-color: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-            transition: all 0.3s ease;
-            height: 100%;
-        }
-        
-        .article-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-        }
-        
-        .article-image {
-            height: 200px;
-            overflow: hidden;
-        }
-        
-        .article-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-        
-        .article-card:hover .article-image img {
-            transform: scale(1.1);
-        }
-        
-        .article-content {
-            padding: 25px;
-        }
-        
-        .article-category {
-            display: inline-block;
-            background-color: var(--vital-teal);
-            color: white;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            margin-bottom: 15px;
-        }
-        
-        .article-category.fikri {
-            background-color: var(--deep-blue);
-        }
-        
-        .article-category.tawasee {
-            background-color: var(--vital-teal);
-        }
-        
-        .article-content h3 {
-            font-size: 1.4rem;
-            margin-bottom: 15px;
-            min-height: 66px;
-        }
-        
-        .article-excerpt {
-            color: var(--text-dark);
-            margin-bottom: 20px;
-            font-size: 0.95rem;
-        }
-        
-        .article-meta {
-            display: flex;
-            justify-content: space-between;
-            color: #777;
-            font-size: 0.9rem;
-            border-top: 1px solid var(--light-gray);
-            padding-top: 15px;
-        }
-        
-        /* Contact CTA */
-        .contact-cta {
-            background: linear-gradient(135deg, var(--deep-blue) 0%, #1a3a5f 100%);
-            color: white;
-            text-align: center;
-        }
-        
-        .contact-cta h2 {
-            color: white;
-        }
-        
-        .contact-cta p {
-            max-width: 700px;
-            margin: 0 auto 40px;
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
-        
-        /* Footer */
-        footer {
-            background-color: var(--deep-blue);
-            color: white;
-            padding: 60px 0 30px;
-        }
-        
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-        
-        .footer-column h3 {
-            color: white;
-            font-size: 1.3rem;
-            margin-bottom: 25px;
-            position: relative;
-        }
-        
-        .footer-column h3::after {
-            content: '';
-            position: absolute;
-            width: 40px;
-            height: 3px;
-            background-color: var(--warm-gold);
-            bottom: -10px;
-            right: 0;
-        }
-        
-        .footer-links {
-            list-style: none;
-        }
-        
-        .footer-links li {
-            margin-bottom: 12px;
-        }
-        
-        .footer-links a {
-            color: rgba(255, 255, 255, 0.8);
-            transition: all 0.3s ease;
-        }
-        
-        .footer-links a:hover {
-            color: var(--warm-gold);
-            padding-right: 10px;
-        }
-        
-        .footer-bottom {
-            text-align: center;
-            padding-top: 30px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            color: rgba(255, 255, 255, 0.7);
-            font-size: 0.9rem;
-        }
-        
-        /* Responsive Design */
-        @media (max-width: 992px) {
-            .hero-content {
-                flex-direction: column;
-            }
-            
-            .hero-text, .hero-image {
-                flex: none;
-                width: 100%;
-            }
-            
-            .hero h1 {
-                font-size: 2.8rem;
-            }
-        }
-        
-        @media (max-width: 768px) {
-            nav ul {
-                display: none;
-            }
-            
-            .mobile-menu-btn {
-                display: block;
-            }
-            
-            .mobile-menu.active {
-                display: flex;
-                flex-direction: column;
-                position: absolute;
-                top: 100%;
-                right: 0;
-                width: 100%;
-                background-color: white;
-                padding: 20px;
-                box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-            }
-            
-            .hero {
-                padding-top: 150px;
-            }
-            
-            .hero h1 {
-                font-size: 2.3rem;
-            }
-            
-            .hero p {
-                font-size: 1.1rem;
-            }
-            
-            .section-header h2 {
-                font-size: 2rem;
-            }
-            
-            .articles-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .hero-cta {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-        }
-        
-        @media (max-width: 576px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
-            
-            .hero p {
-                font-size: 1rem;
-            }
-            
-            .section-header h2 {
-                font-size: 1.8rem;
-            }
-            
-            section {
-                padding: 60px 0;
-            }
-        }
-        
-        /* Animation Classes */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.8s ease, transform 0.8s ease;
-        }
-        
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    </style>
+    <!-- الأنماط -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/animations.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/assets/icons/logo-icon.svg">
 </head>
 <body>
-    <!-- Header & Navigation -->
-    <header>
-        <div class="container header-container">
-            <div class="logo">
-                <div class="logo-text">
-                    <h1>نواة طبيب</h1>
-                    <p>د. أنس محمد الهبه</p>
+    <!-- الهيدر -->
+    <header class="site-header fade-in-up">
+        <div class="container">
+            <div class="header-content">
+                <!-- الشعار -->
+                <div class="logo">
+                    <div class="logo-icon"></div>
+                    <div class="logo-text">
+                        <h1>نواة طبيب</h1>
+                        <span class="tagline">من العمق.. نبدأ</span>
+                    </div>
                 </div>
+                
+                <!-- التنقل -->
+                <nav class="main-nav">
+                    <ul class="stagger-children">
+                        <li><a href="/" class="nav-link">الرئيسية</a></li>
+                        <li><a href="/about.html" class="nav-link">عني</a></li>
+                        <li><a href="/blog.html" class="nav-link">المدونة</a></li>
+                        <li><a href="/contact.html" class="nav-link">اتصل</a></li>
+                    </ul>
+                </nav>
             </div>
-            
-            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
-            
-            <nav>
-                <ul id="mainNav">
-                    <li><a href="#home">الرئيسية</a></li>
-                    <li><a href="#about">عني</a></li>
-                    <li><a href="#blog">المدونة</a></li>
-                    <li><a href="#contact">تواصل معي</a></li>
-                    <li><a href="#" class="english-font">EN</a></li>
-                </ul>
-            </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text fade-in">
-                    <h1>د. أنس محمد الهبه<br><span style="color: var(--vital-teal);">طبيب أسنان من صنعاء</span></h1>
-                    <p>
-                        أعتقد أن طب الأسنان ليس حفرًا وملءً.. بل هو <strong>حوار صامت مع تاريخ الإنسان</strong>، يُقرأ من خلال عظام فكه وأحلام ابتسامته. هنا، أشاركك فصولًا من هذا الحوار.
-                    </p>
-                    <div class="hero-cta">
-                        <a href="#blog" class="btn">اكتشف مقالاتي الفكرية</a>
-                        <a href="#about" class="btn btn-outline">تعرف عليّ أكثر</a>
-                    </div>
-                </div>
-                <div class="hero-image fade-in">
-                    <!-- Placeholder for doctor's image - replace with actual image -->
-                    <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="د. أنس الهبه - طبيب أسنان">
-                </div>
-            </div>
+    <!-- القسم البطولي -->
+    <section class="hero">
+        <div class="hero-background">
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="/assets/video/hero-cinematic.mp4" type="video/mp4">
+            </video>
+            <div class="overlay-gradient"></div>
         </div>
-    </section>
-
-    <!-- Philosophy Section -->
-    <section class="philosophy" id="about">
+        
         <div class="container">
-            <div class="section-header">
-                <h2>فلسفتي الطبية</h2>
-            </div>
-            <div class="philosophy-content fade-in">
-                <p>
-                    جئت من أرض علمتني أن الجمال يحتمل القسوة. حجارتها البازلتية القوية تشبه أسنان الإنسان: صامدة، تحكي تاريخًا، وتحتاج إلى فهم لطيف لكي تبوح بأسرارها.
-                </p>
-                <div class="quote">
-                    "ليس كل ما يلمع في الفم... سنًّا. هناك ألم يلمع كالذهب، وصمت يتألق كاللؤلؤ، وذكرى تبقى كالجذر في العظم."
-                </div>
-                <p>
-                    في عيادتي وفي كتاباتي، أسعى لبناء جسر بين الدقة العلمية الصارمة والعمق الإنساني الرحيم. لأن العلاج الناجح يبدأ عندما يفهم المريض قصته مع جسده، وعندما ينظر الطبيب خلف السن ليرى الإنسان.
-                </p>
-                <a href="#blog" class="btn" style="margin-top: 30px;">اقرأ المزيد من أفكاري</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Blog Preview Section -->
-    <section class="blog-preview" id="blog">
-        <div class="container">
-            <div class="section-header">
-                <h2>أحدث المقالات</h2>
-                <p>مختارات من أفكاري وكتاباتي</p>
-            </div>
-            <div class="articles-grid">
-                <!-- Article 1 - فكري -->
-                <div class="article-card fade-in">
-                    <div class="article-image">
-                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="مقال فكري طبي">
-                    </div>
-                    <div class="article-content">
-                        <span class="article-category fikri">فكري طبي</span>
-                        <h3>سوسنة الأسنان: بين جبروت الألم وعزيمة الإنسان</h3>
-                        <p class="article-excerpt">
-                            كيف يتحول الألم من عدو يهاجمنا إلى لغة يحاول الجسد من خلالها إخبارنا بقصة؟ رحلة فلسفية في معنى الألم وجذوره في تاريخ الطب...
-                        </p>
-                        <a href="#" class="btn" style="padding: 8px 20px; font-size: 0.9rem;">اقرأ المقال</a>
-                        <div class="article-meta">
-                            <span>8 دقائق قراءة</span>
-                            <span>مارس 2024</span>
-                        </div>
-                    </div>
+            <div class="hero-content fade-in-up">
+                <h1 class="doctor-name hero-text-reveal">د. أنس محمد الهبه</h1>
+                <span class="doctor-title">طبيب أسنان من صنعاء</span>
+                
+                <div class="hero-message">
+                    أعتقد أن طب الأسنان ليس حفرًا وملءً.. بل هو <strong>حوار صامت مع تاريخ الإنسان</strong>، يُقرأ من خلال عظام فكه وأحلام ابتسامته. هنا، أشاركك فصولًا من هذا الحوار.
                 </div>
                 
-                <!-- Article 2 - توعوي -->
-                <div class="article-card fade-in">
-                    <div class="article-image">
-                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="مقال توعوي">
-                    </div>
-                    <div class="article-content">
-                        <span class="article-category tawasee">توعية للمريض</span>
-                        <h3>الفرشاة ليست سيفًا: فن تنظيف الأسنان الرقيق</h3>
-                        <p class="article-excerpt">
-                            قد تكون تنظف أسنانك بقسوة ظانًا أنك تحميها، لكنك في الحال تقتل دفاعاتها الطبيعية. دليل عملي لفهم فن التنظيف اللطيف الفعال...
-                        </p>
-                        <a href="#" class="btn" style="padding: 8px 20px; font-size: 0.9rem;">اقرأ المقال</a>
-                        <div class="article-meta">
-                            <span>5 دقائق قراءة</span>
-                            <span>فبراير 2024</span>
-                        </div>
-                    </div>
+                <div class="cta-buttons">
+                    <a href="/blog.html" class="btn btn-primary">
+                        <span>اكتشف مقالاتي الفكرية</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </a>
+                    <a href="/about.html" class="btn btn-outline">تعرف عليّ أكثر</a>
                 </div>
-                
-                <!-- Article 3 - فكري -->
-                <div class="article-card fade-in">
-                    <div class="article-image">
-                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="مقال فكري">
-                    </div>
-                    <div class="article-content">
-                        <span class="article-category fikri">فكري طبي</span>
-                        <h3>فلسفة الابتسامة في ثقافات العالم: من الطقوس إلى العلم</h3>
-                        <p class="article-excerpt">
-                            كيف نظرت الحضارات المختلفة إلى الابتسامة عبر التاريخ؟ ولماذا تختلف معايير الجمال بين شعب وآخر؟ تأملات أنثروبولوجية طبية...
-                        </p>
-                        <a href="#" class="btn" style="padding: 8px 20px; font-size: 0.9rem;">اقرأ المقال</a>
-                        <div class="article-meta">
-                            <span>12 دقيقة قراءة</span>
-                            <span>يناير 2024</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div style="text-align: center; margin-top: 50px;">
-                <a href="#" class="btn btn-outline">عرض جميع المقالات</a>
             </div>
         </div>
     </section>
 
-    <!-- Contact CTA Section -->
-    <section class="contact-cta" id="contact">
+    <!-- المقالات المميزة -->
+    <section class="featured-articles">
         <div class="container">
-            <div class="section-header">
-                <h2>تواصل معي</h2>
+            <div class="section-header fade-in-up">
+                <h2 class="scroll-underline">أحدث الرؤى الفكرية</h2>
+                <p class="subtitle">مقالات مختارة تجمع بين الدقة العلمية والعمق الفلسفي</p>
             </div>
-            <p>
-                للاستفسارات العلمية، المحاضرات، أو مجرد حوار فكري حول مواضيع طبية وإنسانية، أنا هنا لأسمع منك.
-            </p>
-            <a href="mailto:contact@nawaattabib.com" class="btn" style="background-color: var(--warm-gold); color: var(--deep-blue);">راسلني عبر البريد</a>
             
-            <div style="margin-top: 50px; background-color: rgba(255,255,255,0.1); padding: 30px; border-radius: 10px; max-width: 700px; margin-left: auto; margin-right: auto;">
-                <h3 style="color: white; margin-bottom: 20px;">تنبيه مهم:</h3>
-                <p style="font-size: 1rem; opacity: 0.9;">
-                    ↳ هذا الموقع للتعليم والتوعية الطبية والفكرية فقط. المعلومات هنا لا تغني عن استشارة طبيبك الشخصي. التشخيص الدقيق يتطلب فحصًا سريريًا.
-                </p>
+            <div class="articles-grid">
+                <!-- المقال 1 -->
+                <article class="article-card fade-in-up float-card">
+                    <div class="card-header">
+                        <img data-src="/assets/images/article1.jpg" alt="صورة رمزية لمقال فلسفي" class="card-image lazy-image">
+                        <span class="card-badge">فكري</span>
+                    </div>
+                    <div class="card-content">
+                        <span class="article-category">فلسفة طبية</span>
+                        <h3 class="article-title">سوسنة الأسنان: بين جبروت الألم وعزيمة الإنسان</h3>
+                        <p class="article-excerpt">تأملات في العلاقة المعقدة بين الألم الجسدي والصمود الإنساني، وكيف يمكن لفهم هذه العلاقة أن يغير من ممارستنا الطبية.</p>
+                        <a href="/article1.html" class="read-more">
+                            اقرأ المقال كاملاً
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+                
+                <!-- المقال 2 -->
+                <article class="article-card fade-in-up float-card" style="animation-delay: 0.2s">
+                    <div class="card-header">
+                        <img data-src="/assets/images/article2.jpg" alt="صورة توعوية" class="card-image lazy-image">
+                        <span class="card-badge" style="background: var(--vital-teal)">توعوي</span>
+                    </div>
+                    <div class="card-content">
+                        <span class="article-category">صحة الفم</span>
+                        <h3 class="article-title">قبل أن تفكر في خلع ضرسك.. اقرأ هذا</h3>
+                        <p class="article-excerpt">دليل مفصل لاتخاذ القرار الصحيح بين المحافظة على السن أو خلعه، مع توضيح المخاطر الطويلة الأمد للخلع غير المدروس.</p>
+                        <a href="/article2.html" class="read-more">
+                            اقرأ المقال كاملاً
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
+    <!-- اقتباس اليوم -->
+    <section class="daily-quote">
+        <div class="container">
+            <div class="quote-container fade-in-up">
+                <div class="quote-icon">"</div>
+                <p class="quote-text">السنّ ليس مجرد عظم، بل هو شاهد على تاريخ الإنسان وحارِسٌ لكرامته في المضغ والكلام والابتسام.</p>
+                <div class="quote-source">- من مقال: سوسنة الأسنان</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="site-footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-column">
-                    <h3>نواة طبيب</h3>
-                    <p style="color: rgba(255,255,255,0.8); margin-top: 20px; line-height: 1.7;">
-                        موقع د. أنس الهبه الشخصي، حيث يلتقي العلم الطبي الدقيق بالعمق الفكري الإنساني. من صنعاء إلى العالم.
+                <!-- معلومات الموقع -->
+                <div class="footer-logo">
+                    <div class="logo">
+                        <div class="logo-icon"></div>
+                        <div class="logo-text">
+                            <h1>نواة طبيب</h1>
+                            <span class="tagline">من العمق.. نبدأ</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        موقع طبي فكري يهدف إلى سد الفجوة بين العلم الطبي الدقيق والفهم الإنساني العميق لصحة الفم والأسنان.
                     </p>
                 </div>
                 
-                <div class="footer-column">
-                    <h3>روابط سريعة</h3>
-                    <ul class="footer-links">
-                        <li><a href="#home">الرئيسية</a></li>
-                        <li><a href="#about">فلسفتي وسيرتي</a></li>
-                        <li><a href="#blog">المدونة الفكرية</a></li>
-                        <li><a href="#contact">التواصل والاستفسارات</a></li>
+                <!-- روابط سريعة -->
+                <div class="footer-links">
+                    <h3>تصفح الموقع</h3>
+                    <ul>
+                        <li><a href="/">الرئيسية</a></li>
+                        <li><a href="/about.html">السيرة الذاتية</a></li>
+                        <li><a href="/blog.html">المدونة الفكرية</a></li>
+                        <li><a href="/contact.html">اتصل بي</a></li>
                     </ul>
                 </div>
                 
-                <div class="footer-column">
-                    <h3>المقالات حسب التصنيف</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">مقالات فكرية طبية عميقة</a></li>
-                        <li><a href="#">مقالات توعوية للمرضى</a></li>
-                        <li><a href="#">مقالات عن فلسفة الطب</a></li>
-                        <li><a href="#">مقالات عن تاريخ طب الأسنان</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>التوسعات المستقبلية</h3>
-                    <ul class="footer-links">
-                        <li><a href="#" style="color: var(--warm-gold);">نظام حجز المواعيد (قريبًا)</a></li>
-                        <li><a href="#" style="color: var(--warm-gold);">النشرة البريدية الفكرية</a></li>
-                        <li><a href="#" style="color: var(--warm-gold);">مكتبة PDF للمقالات</a></li>
-                        <li><a href="#" style="color: var(--warm-gold);">منصة الأسئلة العميقة</a></li>
-                    </ul>
+                <!-- النشرة البريدية -->
+                <div class="footer-newsletter">
+                    <h3>النشرة الفكرية</h3>
+                    <p>اشترك لتصلك ملخصات أسبوعية لأعمق الأفكار</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="بريدك الإلكتروني" class="newsletter-input" required>
+                        <button type="submit" class="btn btn-primary" style="padding: 0.8rem 1.5rem">اشترك</button>
+                    </form>
                 </div>
             </div>
             
-            <div class="footer-bottom">
-                <p>© 2024 نواة طبيب - د. أنس محمد الهبه. جميع الحقوق محفوظة. | صمم بعناية ليعكس العمق والاحترافية</p>
-                <p style="margin-top: 10px; font-size: 0.8rem;">صنعاء، اليمن</p>
+            <!-- حقوق النشر -->
+            <div class="copyright">
+                <p>© 2024 نواة طبيب - د. أنس محمد الهبه. جميع الحقوق محفوظة. المحتوى محمي بحقوق الملكية الفكرية.</p>
+                <p style="margin-top: 0.5rem; font-size: 0.8rem;">هذا الموقع لأغراض التوعية العلمية ولا يغني عن استشارة الطبيب الشخصي.</p>
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript -->
-    <script>
-        // Mobile Menu Toggle
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const mainNav = document.getElementById('mainNav');
-        
-        mobileMenuBtn.addEventListener('click', function() {
-            mainNav.classList.toggle('active');
-        });
-        
-        // Close menu when clicking outside
-        document.addEventListener('click', function(event) {
-            if (!mainNav.contains(event.target) && !mobileMenuBtn.contains(event.target)) {
-                mainNav.classList.remove('active');
-            }
-        });
-        
-        // Scroll animations
-        const fadeElements = document.querySelectorAll('.fade-in');
-        
-        const fadeInOnScroll = () => {
-            fadeElements.forEach(element => {
-                const elementTop = element.getBoundingClientRect().top;
-                const elementVisible = 150;
-                
-                if (elementTop < window.innerHeight - elementVisible) {
-                    element.classList.add('visible');
-                }
-            });
-        };
-        
-        // Check on load and scroll
-        window.addEventListener('load', fadeInOnScroll);
-        window.addEventListener('scroll', fadeInOnScroll);
-        
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                    
-                    // Close mobile menu if open
-                    mainNav.classList.remove('active');
-                }
-            });
-        });
-        
-        // Language toggle placeholder
-        document.querySelector('a.english-font').addEventListener('click', function(e) {
-            e.preventDefault();
-            alert('English version coming soon!');
-        });
-    </script>
+    <!-- العلامة المائية -->
+    <div class="watermark">
+        <div class="watermark-text">نواة طبيب</div>
+    </div>
+
+    <!-- السكريبتات -->
+    <script src="/js/main.js"></script>
+    <script src="/js/animations.js"></script>
 </body>
 </html>
