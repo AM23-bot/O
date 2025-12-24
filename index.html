@@ -3,222 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>نواة طبيب | د. أنس محمد الهبه - طبيب أسنان ومفكر صحي</title>
-    <meta name="description" content="مدونة فكرية طبية عميقة تجمع بين العلم والفكر في طب الأسنان. مقالات تحليلية، توعية صحية، وفلسفة طبية إنسانية.">
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="نواة طبيب | من العمق.. نبدأ">
-    <meta property="og:description" content="حيث يلتقي العلم بالفكر الواعي في طب الأسنان">
-    <meta property="og:image" content="/assets/images/og-image.jpg">
-    <meta property="og:type" content="website">
-    
-    <!-- Structured Data -->
+    <title>نواة طبيب | الدكتورة أنس محمد الهبه - فلسفة الطب من منطلق الفكر</title>
+    <meta name="description" content="منصة الدكتور أنس الهبه الفكرية. حيث يلتقي طب الأسنان الدقيق بالفلسفة والعلم الرصين. مقالات عميقة، رؤى أكاديمية، ونظرة إنسانية للطب من صنعاء، اليمن.">
+    <!-- Schema Markup -->
     <script type="application/ld+json">
     {
-        "@context": "https://schema.org",
-        "@type": "MedicalBusiness",
-        "name": "نواة طبيب - د. أنس الهبه",
-        "description": "موقع طبي فكري متخصص في طب الأسنان",
-        "medicalSpecialty": "Dentistry",
-        "address": {
-            "@type": "PostalAddress",
-            "addressCountry": "YE",
-            "addressRegion": "صنعاء"
-        },
-        "founder": {
-            "@type": "Person",
-            "name": "أنس محمد الهبه",
-            "jobTitle": "طبيب أسنان"
-        }
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "أنس محمد الهبه",
+      "jobTitle": "طبيب أسنان وأستاذ أكاديمي",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "صنعاء",
+        "addressCountry": "YE"
+      },
+      "url": "https://www.nawaat-tabib.com",
+      "sameAs": [],
+      "knowsAbout": ["طب الأسنان", "الأكاديمية الطبية", "الفكر الطبي", "التوعية الصحية"]
     }
     </script>
-    
-    <!-- الخطوط -->
-    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
-    <!-- الأنماط -->
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/animations.css">
-    <link rel="stylesheet" href="/css/responsive.css">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/assets/icons/logo-icon.svg">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 </head>
 <body>
-    <!-- الهيدر -->
-    <header class="site-header fade-in-up">
+    <!-- Header & Navigation -->
+    <header class="main-header">
         <div class="container">
-            <div class="header-content">
-                <!-- الشعار -->
-                <div class="logo">
-                    <div class="logo-icon"></div>
-                    <div class="logo-text">
-                        <h1>نواة طبيب</h1>
-                        <span class="tagline">من العمق.. نبدأ</span>
-                    </div>
-                </div>
-                
-                <!-- التنقل -->
-                <nav class="main-nav">
-                    <ul class="stagger-children">
-                        <li><a href="/" class="nav-link">الرئيسية</a></li>
-                        <li><a href="/about.html" class="nav-link">عني</a></li>
-                        <li><a href="/blog.html" class="nav-link">المدونة</a></li>
-                        <li><a href="/contact.html" class="nav-link">اتصل</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <a href="index.html" class="logo">نواة طبيب</a>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">عني</a></li>
+                    <li><a href="blog.html">مدونتي</a></li>
+                    <li><a href="contact.html">اتصل بي</a></li>
+                    <li><a href="index-en.html" class="lang-switcher">EN</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="فتح القائمة">☰</button>
         </div>
     </header>
 
-    <!-- القسم البطولي -->
+    <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-background">
-            <video autoplay muted loop playsinline class="hero-video">
-                <source src="/assets/video/hero-cinematic.mp4" type="video/mp4">
-            </video>
-            <div class="overlay-gradient"></div>
-        </div>
-        
         <div class="container">
-            <div class="hero-content fade-in-up">
-                <h1 class="doctor-name hero-text-reveal">د. أنس محمد الهبه</h1>
-                <span class="doctor-title">طبيب أسنان من صنعاء</span>
-                
-                <div class="hero-message">
-                    أعتقد أن طب الأسنان ليس حفرًا وملءً.. بل هو <strong>حوار صامت مع تاريخ الإنسان</strong>، يُقرأ من خلال عظام فكه وأحلام ابتسامته. هنا، أشاركك فصولًا من هذا الحوار.
-                </div>
-                
-                <div class="cta-buttons">
-                    <a href="/blog.html" class="btn btn-primary">
-                        <span>اكتشف مقالاتي الفكرية</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"/>
-                        </svg>
-                    </a>
-                    <a href="/about.html" class="btn btn-outline">تعرف عليّ أكثر</a>
-                </div>
+            <div class="hero-content">
+                <h1>د. أنس محمد الهبه</h1>
+                <p class="tagline">طبيب أسنان & أستاذ أكاديمي</p>
+                <p class="hero-quote">"الطِب ليس مجرد علمٍ للأجساد، بل هو فلسفةٌ لفهم كينونة الإنسان. هنا، حيث يلتقي النَّظَر العقلي بالبَرَعة اليدويَّة."</p>
+                <a href="blog.html" class="cta-button">اكتشف أفكاري</a>
+            </div>
+            <div class="hero-image">
+                <img src="assets/images/dr-hero.jpg" alt="الدكتور أنس الهبه في وضعية احترافية" loading="lazy">
             </div>
         </div>
     </section>
 
-    <!-- المقالات المميزة -->
+    <!-- Philosophy Preview -->
+    <section class="philosophy-preview">
+        <div class="container">
+            <h2>من العيادة إلى عالم الأفكار</h2>
+            <p>في عالم يختزل الطب أحياناً في وصفة أو إجراء، أؤمن بأن جوهر الممارسة الطبية يكمن في التفكّر. كل ضرس يعالَج، وكل حالة تشخَّص، هي قصة معقدة من البيولوجيا، النفس، والبيئة. هذا الموقع هو امتداد لعيادتي وفصلي الدراسي، حيث أشارك معك التأملات الناتجة عن سنوات من الممارسة والدراسة والقراءة، محاولاً ربط إبرة الحفّار بقلم المفكر.</p>
+        </div>
+    </section>
+
+    <!-- Featured Articles -->
     <section class="featured-articles">
         <div class="container">
-            <div class="section-header fade-in-up">
-                <h2 class="scroll-underline">أحدث الرؤى الفكرية</h2>
-                <p class="subtitle">مقالات مختارة تجمع بين الدقة العلمية والعمق الفلسفي</p>
-            </div>
-            
+            <h2>أحدث التأملات</h2>
             <div class="articles-grid">
-                <!-- المقال 1 -->
-                <article class="article-card fade-in-up float-card">
-                    <div class="card-header">
-                        <img data-src="/assets/images/article1.jpg" alt="صورة رمزية لمقال فلسفي" class="card-image lazy-image">
-                        <span class="card-badge">فكري</span>
-                    </div>
-                    <div class="card-content">
-                        <span class="article-category">فلسفة طبية</span>
-                        <h3 class="article-title">سوسنة الأسنان: بين جبروت الألم وعزيمة الإنسان</h3>
-                        <p class="article-excerpt">تأملات في العلاقة المعقدة بين الألم الجسدي والصمود الإنساني، وكيف يمكن لفهم هذه العلاقة أن يغير من ممارستنا الطبية.</p>
-                        <a href="/article1.html" class="read-more">
-                            اقرأ المقال كاملاً
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"/>
-                            </svg>
-                        </a>
+                <article class="article-card">
+                    <img src="assets/images/blog/thought1.jpg" alt="صورة تجريدية للفكر" loading="lazy">
+                    <div class="article-content">
+                        <h3><a href="blog/article1.html">أخلاقيات اللمسة الأولى: المسافة بين الطبيب والمريض في العصر الرقمي</a></h3>
+                        <p>كيف تُعيد التكنولوجيا تعريف مفهوم الثقة والحدود الشخصية في العلاقة العلاجية؟ بحث في سيكولوجية التواصل الطبي.</p>
                     </div>
                 </article>
-                
-                <!-- المقال 2 -->
-                <article class="article-card fade-in-up float-card" style="animation-delay: 0.2s">
-                    <div class="card-header">
-                        <img data-src="/assets/images/article2.jpg" alt="صورة توعوية" class="card-image lazy-image">
-                        <span class="card-badge" style="background: var(--vital-teal)">توعوي</span>
+                <article class="article-card">
+                    <img src="assets/images/blog/thought2.jpg" alt="رسم قديم للأسنان" loading="lazy">
+                    <div class="article-content">
+                        <h3><a href="blog/article2.html">الألم في طب الأسنان: عدوٌ يجب محاربته أم رسولٌ يجب الاستماع إليه؟</a></h3>
+                        <p>نظرة تاريخية وفلسفية لمفهوم الألم في طب الأسنان، وتأثير هذه النظرة على ممارستنا السريرية اليوم.</p>
                     </div>
-                    <div class="card-content">
-                        <span class="article-category">صحة الفم</span>
-                        <h3 class="article-title">قبل أن تفكر في خلع ضرسك.. اقرأ هذا</h3>
-                        <p class="article-excerpt">دليل مفصل لاتخاذ القرار الصحيح بين المحافظة على السن أو خلعه، مع توضيح المخاطر الطويلة الأمد للخلع غير المدروس.</p>
-                        <a href="/article2.html" class="read-more">
-                            اقرأ المقال كاملاً
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"/>
-                            </svg>
-                        </a>
+                </article>
+                <article class="article-card">
+                    <img src="assets/images/blog/advice1.jpg" alt="صورة رمزية للثقة" loading="lazy">
+                    <div class="article-content">
+                        <h3><a href="blog/article3.html">دليل المريض الذكي: كيف تختار طبيب أسنانك؟ أكثر من مجرد سعر وموقع</a></h3>
+                        <p>معايير تتجاوز الإعلانات البراقة، لتساعدك في اختيار الشريك الصحيح لرعاية صحة فمك على المدى الطويل.</p>
                     </div>
                 </article>
             </div>
         </div>
     </section>
 
-    <!-- اقتباس اليوم -->
-    <section class="daily-quote">
+    <!-- Footer -->
+    <footer class="main-footer">
         <div class="container">
-            <div class="quote-container fade-in-up">
-                <div class="quote-icon">"</div>
-                <p class="quote-text">السنّ ليس مجرد عظم، بل هو شاهد على تاريخ الإنسان وحارِسٌ لكرامته في المضغ والكلام والابتسام.</p>
-                <div class="quote-source">- من مقال: سوسنة الأسنان</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- الفوتر -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-content">
-                <!-- معلومات الموقع -->
-                <div class="footer-logo">
-                    <div class="logo">
-                        <div class="logo-icon"></div>
-                        <div class="logo-text">
-                            <h1>نواة طبيب</h1>
-                            <span class="tagline">من العمق.. نبدأ</span>
-                        </div>
-                    </div>
-                    <p class="footer-description">
-                        موقع طبي فكري يهدف إلى سد الفجوة بين العلم الطبي الدقيق والفهم الإنساني العميق لصحة الفم والأسنان.
-                    </p>
-                </div>
-                
-                <!-- روابط سريعة -->
-                <div class="footer-links">
-                    <h3>تصفح الموقع</h3>
-                    <ul>
-                        <li><a href="/">الرئيسية</a></li>
-                        <li><a href="/about.html">السيرة الذاتية</a></li>
-                        <li><a href="/blog.html">المدونة الفكرية</a></li>
-                        <li><a href="/contact.html">اتصل بي</a></li>
-                    </ul>
-                </div>
-                
-                <!-- النشرة البريدية -->
-                <div class="footer-newsletter">
-                    <h3>النشرة الفكرية</h3>
-                    <p>اشترك لتصلك ملخصات أسبوعية لأعمق الأفكار</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="بريدك الإلكتروني" class="newsletter-input" required>
-                        <button type="submit" class="btn btn-primary" style="padding: 0.8rem 1.5rem">اشترك</button>
-                    </form>
-                </div>
-            </div>
-            
-            <!-- حقوق النشر -->
-            <div class="copyright">
-                <p>© 2024 نواة طبيب - د. أنس محمد الهبه. جميع الحقوق محفوظة. المحتوى محمي بحقوق الملكية الفكرية.</p>
-                <p style="margin-top: 0.5rem; font-size: 0.8rem;">هذا الموقع لأغراض التوعية العلمية ولا يغني عن استشارة الطبيب الشخصي.</p>
-            </div>
+            <p>© <span id="current-year"></span> نواة طبيب - د. أنس محمد الهبه. جميع الحقوق محفوظة.</p>
+            <p class="disclaimer">المحتوى المقدم هنا هو لأغراض التثقيف والفكر الطبي ولا يغني عن استشارة طبيبك الشخصي. مصمم بحب من صنعاء.</p>
+            <p class="contact-info">للتواصل المهني والأكاديمي فقط: <a href="contact.html">استخدم النموذج</a></p>
         </div>
     </footer>
 
-    <!-- العلامة المائية -->
-    <div class="watermark">
-        <div class="watermark-text">نواة طبيب</div>
-    </div>
-
-    <!-- السكريبتات -->
-    <script src="/js/main.js"></script>
-    <script src="/js/animations.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
