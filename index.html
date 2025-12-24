@@ -3,110 +3,231 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>نواة طبيب | الدكتورة أنس محمد الهبه - فلسفة الطب من منطلق الفكر</title>
-    <meta name="description" content="منصة الدكتور أنس الهبه الفكرية. حيث يلتقي طب الأسنان الدقيق بالفلسفة والعلم الرصين. مقالات عميقة، رؤى أكاديمية، ونظرة إنسانية للطب من صنعاء، اليمن.">
-    <!-- Schema Markup -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "أنس محمد الهبه",
-      "jobTitle": "طبيب أسنان وأستاذ أكاديمي",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "صنعاء",
-        "addressCountry": "YE"
-      },
-      "url": "https://www.nawaat-tabib.com",
-      "sameAs": [],
-      "knowsAbout": ["طب الأسنان", "الأكاديمية الطبية", "الفكر الطبي", "التوعية الصحية"]
-    }
-    </script>
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <title>نواة طبيب | د. أنس محمد الهبه</title>
+    <meta name="description" content="المنصة الفكرية والطبية للدكتور أنس محمد الهبه. دقة في طب الأسنان، وعمق في التحليل الفكري.">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=IBM+Plex+Sans+Arabic:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1A2E35;
+            --accent: #2D707E;
+            --gold: #B19470;
+            --bg: #F9F9F7;
+            --text: #333;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'IBM Plex Sans Arabic', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+
+        /* Cinematic Loader */
+        #loader {
+            position: fixed;
+            height: 100vh;
+            width: 100vw;
+            background: var(--primary);
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--gold);
+            font-family: 'Amiri', serif;
+            font-size: 2rem;
+            animation: fadeOut 2s forwards 1.5s;
+        }
+
+        header {
+            padding: 2rem 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-family: 'Amiri', serif;
+            font-size: 1.8rem;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        nav a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover { color: var(--accent); }
+
+        .hero {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 15%;
+            background: linear-gradient(rgba(26, 46, 53, 0.02), rgba(26, 46, 53, 0.05));
+        }
+
+        .hero h1 {
+            font-family: 'Amiri', serif;
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 700px;
+            color: #555;
+        }
+
+        .cta-btn {
+            margin-top: 2rem;
+            padding: 12px 35px;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+            border: 1px solid var(--primary);
+        }
+
+        .cta-btn:hover {
+            background: transparent;
+            color: var(--primary);
+        }
+
+        .section { padding: 80px 10%; }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+            border-bottom: 3px solid var(--gold);
+        }
+
+        footer {
+            background: var(--primary);
+            color: white;
+            padding: 50px 10%;
+            text-align: center;
+        }
+
+        @keyframes fadeOut {
+            to { opacity: 0; visibility: hidden; }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            header { flex-direction: column; }
+            nav { margin-top: 20px; }
+        }
+
+        /* Anti-Copy Protection Overlay */
+        .no-select {
+            user-select: none;
+            -webkit-user-select: none;
+        }
+    </style>
 </head>
 <body>
-    <!-- Header & Navigation -->
-    <header class="main-header">
-        <div class="container">
-            <a href="index.html" class="logo">نواة طبيب</a>
-            <nav id="main-nav">
-                <ul>
-                    <li><a href="index.html">الرئيسية</a></li>
-                    <li><a href="about.html">عني</a></li>
-                    <li><a href="blog.html">مدونتي</a></li>
-                    <li><a href="contact.html">اتصل بي</a></li>
-                    <li><a href="index-en.html" class="lang-switcher">EN</a></li>
-                </ul>
-            </nav>
-            <button class="menu-toggle" aria-label="فتح القائمة">☰</button>
-        </div>
+
+    <div id="loader">نواة..</div>
+
+    <header>
+        <a href="#" class="logo">نواة طبيب</a>
+        <nav>
+            <a href="#about">عني</a>
+            <a href="#articles">المدونة</a>
+            <a href="#contact">تواصل</a>
+            <a href="#">EN</a>
+        </nav>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>د. أنس محمد الهبه</h1>
-                <p class="tagline">طبيب أسنان & أستاذ أكاديمي</p>
-                <p class="hero-quote">"الطِب ليس مجرد علمٍ للأجساد، بل هو فلسفةٌ لفهم كينونة الإنسان. هنا، حيث يلتقي النَّظَر العقلي بالبَرَعة اليدويَّة."</p>
-                <a href="blog.html" class="cta-button">اكتشف أفكاري</a>
-            </div>
-            <div class="hero-image">
-                <img src="assets/images/dr-hero.jpg" alt="الدكتور أنس الهبه في وضعية احترافية" loading="lazy">
-            </div>
-        </div>
+        <h1>د. أنس محمد الهبه</h1>
+        <p>طبيب أسنان، وباحث في ثنايا المعرفة الطبية. نؤمن أن الابتسامة تبدأ من العقل، وتكتمل في العيادة.</p>
+        <a href="#articles" class="cta-btn">استكشف الفكر الطبي</a>
     </section>
 
-    <!-- Philosophy Preview -->
-    <section class="philosophy-preview">
-        <div class="container">
-            <h2>من العيادة إلى عالم الأفكار</h2>
-            <p>في عالم يختزل الطب أحياناً في وصفة أو إجراء، أؤمن بأن جوهر الممارسة الطبية يكمن في التفكّر. كل ضرس يعالَج، وكل حالة تشخَّص، هي قصة معقدة من البيولوجيا، النفس، والبيئة. هذا الموقع هو امتداد لعيادتي وفصلي الدراسي، حيث أشارك معك التأملات الناتجة عن سنوات من الممارسة والدراسة والقراءة، محاولاً ربط إبرة الحفّار بقلم المفكر.</p>
-        </div>
-    </section>
-
-    <!-- Featured Articles -->
-    <section class="featured-articles">
-        <div class="container">
-            <h2>أحدث التأملات</h2>
-            <div class="articles-grid">
-                <article class="article-card">
-                    <img src="assets/images/blog/thought1.jpg" alt="صورة تجريدية للفكر" loading="lazy">
-                    <div class="article-content">
-                        <h3><a href="blog/article1.html">أخلاقيات اللمسة الأولى: المسافة بين الطبيب والمريض في العصر الرقمي</a></h3>
-                        <p>كيف تُعيد التكنولوجيا تعريف مفهوم الثقة والحدود الشخصية في العلاقة العلاجية؟ بحث في سيكولوجية التواصل الطبي.</p>
-                    </div>
-                </article>
-                <article class="article-card">
-                    <img src="assets/images/blog/thought2.jpg" alt="رسم قديم للأسنان" loading="lazy">
-                    <div class="article-content">
-                        <h3><a href="blog/article2.html">الألم في طب الأسنان: عدوٌ يجب محاربته أم رسولٌ يجب الاستماع إليه؟</a></h3>
-                        <p>نظرة تاريخية وفلسفية لمفهوم الألم في طب الأسنان، وتأثير هذه النظرة على ممارستنا السريرية اليوم.</p>
-                    </div>
-                </article>
-                <article class="article-card">
-                    <img src="assets/images/blog/advice1.jpg" alt="صورة رمزية للثقة" loading="lazy">
-                    <div class="article-content">
-                        <h3><a href="blog/article3.html">دليل المريض الذكي: كيف تختار طبيب أسنانك؟ أكثر من مجرد سعر وموقع</a></h3>
-                        <p>معايير تتجاوز الإعلانات البراقة، لتساعدك في اختيار الشريك الصحيح لرعاية صحة فمك على المدى الطويل.</p>
-                    </div>
-                </article>
+    <section id="about" class="section">
+        <h2 style="font-family: 'Amiri'; font-size: 2.5rem;">عن النواة..</h2>
+        <div style="display: flex; gap: 50px; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 300px;">
+                <p>من قلب <b>صنعاء</b>، انطلقت رحلتي الأكاديمية. لست مجرد طبيب يعالج الألم، بل أنا قارئ للمشهد الطبي بوعي إنساني وفلسفي. أهتم بالنزاهة العلمية في ممارستي بقدر اهتمامي بالنتائج الجمالية.</p>
+                <ul style="list-style: none; padding: 0;">
+                    <li>🏛️ مسيرة أكاديمية حافلة بالبحث.</li>
+                    <li>🦷 تخصص دقيق يجمع بين العلم والفن.</li>
+                    <li>🖋️ كاتب مقالات طبية تحليلية.</li>
+                </ul>
+            </div>
+            <div style="flex: 1; min-width: 300px; background: #eee; height: 300px; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                [صورة بروفايل احترافية بالرداء الأبيض]
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="main-footer">
-        <div class="container">
-            <p>© <span id="current-year"></span> نواة طبيب - د. أنس محمد الهبه. جميع الحقوق محفوظة.</p>
-            <p class="disclaimer">المحتوى المقدم هنا هو لأغراض التثقيف والفكر الطبي ولا يغني عن استشارة طبيبك الشخصي. مصمم بحب من صنعاء.</p>
-            <p class="contact-info">للتواصل المهني والأكاديمي فقط: <a href="contact.html">استخدم النموذج</a></p>
+    <section id="articles" class="section" style="background: #f0f2f2;">
+        <h2 style="font-family: 'Amiri'; text-align: center; font-size: 2.5rem;">المحرر الفكري</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>سيكولوجيا الألم في طب الأسنان</h3>
+                <p>لماذا يخشى الناس كرسي الطبيب؟ تحليل فلسفي نفسي لكسر حاجز الخوف..</p>
+                <a href="#" style="color: var(--accent);">اقرأ المزيد ←</a>
+            </div>
+            <div class="card">
+                <h3>أخلاقيات الطب في العصر الرقمي</h3>
+                <p>كيف نحافظ على أمانة المهنة في ظل طوفان المحتوى السطحي؟</p>
+                <a href="#" style="color: var(--accent);">اقرأ المزيد ←</a>
+            </div>
+            <div class="card">
+                <h3>بيولوجيا الابتسامة</h3>
+                <p>دراسة في تداخل الوظيفة الحيوية مع الجمال الفني للأسنان.</p>
+                <a href="#" style="color: var(--accent);">اقرأ المزيد ←</a>
+            </div>
         </div>
+    </section>
+
+    <footer>
+        <p>© 2024 د. أنس محمد الهبه - جميع الحقوق محفوظة</p>
+        <small>إخلاء مسؤولية: المحتوى طبي فكري، لا يغني عن استشارة الطبيب المختص.</small>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Simple Anti-Copy Message
+        document.addEventListener('copy', (e) => {
+            console.log("النزاهة العلمية تقتضي ذكر المصدر عند الاقتباس.");
+        });
+    </script>
 </body>
 </html>
